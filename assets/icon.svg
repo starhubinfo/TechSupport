@@ -1,0 +1,25 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#4CB2FF"/>
+      <stop offset="0.55" stop-color="#2C82F0"/>
+      <stop offset="1" stop-color="#1A55D2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.26" r="0.72">
+      <stop offset="0" stop-color="#CDE8FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#CDE8FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#0A2E70" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+
+  <g filter="url(#mShadow)">
+    <line x1="300" y1="505" x2="715" y2="290" stroke="#ffffff" stroke-width="112" stroke-linecap="round"/>
+    <line x1="356" y1="626" x2="626" y2="486" stroke="#ffffff" stroke-width="112" stroke-linecap="round" opacity="0.82"/>
+    <circle cx="508" cy="748" r="58" fill="#ffffff" opacity="0.66"/>
+  </g>
+</svg>

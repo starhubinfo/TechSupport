@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlClash for iOS — Support</title>
+<meta name="description" content="Support center for FlClash for iOS: features, FAQ, system requirements and contact information.">
+<meta name="theme-color" content="#2C82F0">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="assets/icon.svg" alt="">
+      FlClash
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#specs">Requirements</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="lang-pill" href="index-zh.html">中文</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <img class="hero-icon" src="assets/icon.svg" alt="FlClash app icon">
+  <h1>FlClash Support</h1>
+  <p class="sub">A network configuration manager for iOS, powered by the mihomo core. Browse the feature guide, system requirements and troubleshooting steps.</p>
+  <div class="meta">
+    <span>Version 1.0.0</span>·<span>Requires iOS 15.0 or later</span>·<span>English / 简体中文</span>
+  </div>
+</header>
+
+<!-- ============ Features ============ -->
+<section id="features" class="band">
+  <div class="wrap">
+    <h2>Key features</h2>
+    <p class="section-lead">FlClash separates configuration management from traffic handling — you can load configs, inspect policy groups and switch nodes without turning on the VPN.</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 019 9M12 12l5-5"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Live dashboard</h3>
+        <p>Real-time upload and download rates, active connections, outbound mode and process memory usage — with one-tap core restart.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18 15 15 0 010-18"/></svg></div>
+        <h3>Policy groups &amp; nodes</h3>
+        <p>Browse every policy group, switch nodes manually, run live latency tests, and toggle between rule, global and direct modes.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/></svg></div>
+        <h3>Configuration profiles</h3>
+        <p>Add profiles by subscription URL, local file import or QR code. Switch between profiles freely — changes apply live, no restart needed.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>VPN only when you need it</h3>
+        <p>The system VPN (Network Extension) is engaged only when you explicitly enable it. The rest of the time the app is purely a local config manager.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16l4-6 4 4 4-8"/></svg></div>
+        <h3>Connections &amp; logs</h3>
+        <p>Inspect active connections and live core logs, adjust the log level, run network diagnostics, and clear records at any time.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div>
+        <h3>Geo data &amp; advanced settings</h3>
+        <p>Automatic GeoIP / GeoSite updates, plus control over the mixed port, IPv6, TCP concurrency, hosts entries and the low-memory loader.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Requirements ============ -->
+<section id="specs">
+  <div class="wrap">
+    <h2>Requirements &amp; app information</h2>
+    <p class="section-lead">Reference details for App Store review and user enquiries.</p>
+    <table class="spec">
+      <tr><th>App name</th><td>FlClash</td></tr>
+      <tr><th>Current version</th><td>1.0.0</td></tr>
+      <tr><th>Requirements</th><td>iOS 15.0 or later</td></tr>
+      <tr><th>Supported devices</th><td>iPhone, iPad</td></tr>
+      <tr><th>Languages</th><td>English, Simplified Chinese (switch under Tools → Language)</td></tr>
+      <tr><th>Core component</th><td>mihomo core (open-source, Meta branch)</td></tr>
+      <tr><th>Network capability</th><td>Network Extension (Packet Tunnel), active only when enabled by the user</td></tr>
+      <tr><th>Data collection</th><td>None. The app collects, transmits and analyses no personal or usage data</td></tr>
+      <tr><th>Pricing</th><td>No subscriptions or in-app purchases. No network service is provided or sold</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>About configuration sources:</strong> FlClash is a configuration management tool. It does not provide or resell any network nodes or proxy services. All configuration files are supplied by the user and are parsed locally on the device. Please ensure your usage complies with the laws of your jurisdiction and the terms of your network service provider.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="band">
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <p class="section-lead">Most day-to-day issues are answered below.</p>
+
+    <div class="faq">
+      <details>
+        <summary>How do I import my configuration file?</summary>
+        <div class="faq-body">
+          <p>Open the <strong>Profiles</strong> tab and tap <strong>+</strong> in the top-right corner. Three options are available:</p>
+          <ol>
+            <li><strong>Download from URL</strong> — paste your subscription link and tap download.</li>
+            <li><strong>Import from file</strong> — pick a <code>.yaml</code> / <code>.yml</code> file stored on your device.</li>
+            <li><strong>Scan QR code</strong> — use the camera to scan a configuration QR code.</li>
+          </ol>
+          <p>Tap a profile to activate it. Changes are applied live — no restart required.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>iOS asks me to allow a VPN configuration. What should I do?</summary>
+        <div class="faq-body">
+          <p>The first time you enable the VPN, iOS shows a system permission dialog. Tap <strong>Allow</strong> and confirm with Face ID, Touch ID or your passcode. This is the standard iOS flow for installing a VPN profile into system settings.</p>
+          <p>If you tapped "Don't Allow" by mistake, go to <strong>Settings → General → VPN &amp; Device Management</strong>, remove any leftover profile, then enable the VPN again in the app.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>The VPN is on, but I have no internet access</summary>
+        <div class="faq-body">
+          <p>Work through these steps in order:</p>
+          <ol>
+            <li>On the <strong>Dashboard</strong>, confirm the status reads <strong>"Handling traffic"</strong>.</li>
+            <li>In the <strong>Proxies</strong> tab, run a latency test and confirm the selected node responds (not <em>Timeout</em>).</li>
+            <li>Make sure your profile <strong>hasn't expired</strong> — pull down to refresh the subscription in the Profiles tab.</li>
+            <li>Switch the outbound mode (Rule / Global) to check whether a routing rule is the cause.</li>
+            <li>Under <strong>Tools → Logs</strong>, set the level to <code>info</code> or <code>debug</code> and look for errors.</li>
+            <li>If the problem persists, turn the VPN off and run <strong>Tools → VPN Diagnostics</strong>.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details>
+        <summary>The VPN disconnects on its own after a while</summary>
+        <div class="faq-body">
+          <p>iOS enforces a hard memory ceiling of roughly <strong>50 MB</strong> on network extension processes, and terminates any process that exceeds it. The app includes several layers of memory control, but very high concurrency can still trigger the limit. We recommend:</p>
+          <ul>
+            <li>Enable the <strong>low-memory Geo loader</strong> (memconservative) under Tools → Basic Settings.</li>
+            <li>Set the <strong>log level</strong> to <code>warning</code> or <code>silent</code>.</li>
+            <li>Turn off <strong>TCP concurrency</strong> and <strong>IPv6</strong> if you don't need them.</li>
+            <li>Trim your rule sets — prefer GeoIP over large GEOSITE rule providers.</li>
+          </ul>
+          <p>You can watch the extension's live memory usage on the Dashboard.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I change the app language?</summary>
+        <div class="faq-body">
+          <p>Go to <strong>Tools → Language</strong> and choose <strong>Follow system</strong>, <strong>中文</strong> or <strong>English</strong>. Some tab bar labels require an app restart to update fully.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I update Geo data (GeoIP / GeoSite)?</summary>
+        <div class="faq-body">
+          <p>Open <strong>Tools → Resources</strong> to see each data file's download status and last update time, and tap to update manually. With <strong>auto-update</strong> enabled, the app refreshes them in the background at your chosen interval (in hours).</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does the app collect my data?</summary>
+        <div class="faq-body">
+          <p><strong>No.</strong> FlClash collects, transmits and analyses no personal information or usage data, and contains no third-party analytics or advertising SDKs. The profiles you add, along with connection logs and traffic statistics, are <strong>stored only on your device</strong> and can be cleared at any time from within the app.</p>
+          <p>See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I fully uninstall and remove my data?</summary>
+        <div class="faq-body">
+          <ol>
+            <li>Turn off the VPN toggle inside the app.</li>
+            <li>Touch and hold the Home Screen icon → Delete App.</li>
+            <li>Go to <strong>Settings → General → VPN &amp; Device Management</strong> and remove the FlClash VPN configuration.</li>
+          </ol>
+          <p>Deleting the app removes its sandbox, and with it all local profiles and logs.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What should I include when reporting an issue?</summary>
+        <div class="faq-body">
+          <p>To help us diagnose quickly, please include:</p>
+          <ul>
+            <li>Device model and iOS version (e.g. iPhone 14, iOS 17.5)</li>
+            <li>App version (shown under Tools → About)</li>
+            <li>What happens, and the steps to reproduce it</li>
+            <li>Relevant excerpts from Tools → Logs (<strong>please redact subscription links, server addresses and other sensitive details</strong>)</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 FlClash for iOS. All rights reserved.</p>
+    <p class="spacer">
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="index-zh.html">中文</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

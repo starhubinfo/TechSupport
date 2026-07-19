@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlClash for iOS — 技术支持</title>
+<meta name="description" content="FlClash for iOS 技术支持中心：功能介绍、常见问题、系统要求与联系方式。">
+<meta name="theme-color" content="#2C82F0">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index-zh.html">
+      <img src="assets/icon.svg" alt="">
+      FlClash
+    </a>
+    <div class="nav-links">
+      <a href="#features">功能</a>
+      <a href="#specs">系统要求</a>
+      <a href="#faq">常见问题</a>
+      <a href="privacy-zh.html">隐私政策</a>
+      <a class="lang-pill" href="index.html">EN</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <img class="hero-icon" src="assets/icon.svg" alt="FlClash 应用图标">
+  <h1>FlClash 技术支持</h1>
+  <p class="sub">基于 mihomo 内核的 iOS 网络配置管理工具。查看功能说明、系统要求与常见问题排查。</p>
+  <div class="meta">
+    <span>版本 1.0.0</span>·<span>需要 iOS 15.0 或更高版本</span>·<span>支持 简体中文 / English</span>
+  </div>
+</header>
+
+<!-- ============ 功能 ============ -->
+<section id="features" class="band">
+  <div class="wrap">
+    <h2>主要功能</h2>
+    <p class="section-lead">FlClash 把「配置管理」与「流量接管」分开：不开启 VPN 也能加载配置、查看策略组、切换节点。</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 019 9M12 12l5-5"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>实时仪表盘</h3>
+        <p>实时显示上行 / 下行速率、连接数、出站模式与进程内存占用，并可一键重启内核。</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18 15 15 0 010-18"/></svg></div>
+        <h3>策略组与节点</h3>
+        <p>查看全部策略组，手动切换节点，实时测试各节点延迟，支持规则 / 全局 / 直连模式切换。</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/></svg></div>
+        <h3>配置订阅管理</h3>
+        <p>支持 URL 订阅下载、本地文件导入、二维码扫描添加；多份配置自由切换，热应用无需重启。</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>按需开启 VPN</h3>
+        <p>仅在需要真正代理流量时开启系统 VPN（Network Extension），其余时间仅作本地配置管理。</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16l4-6 4 4 4-8"/></svg></div>
+        <h3>连接与日志</h3>
+        <p>查看活动连接明细与内核实时日志，支持日志级别调整、网络诊断与一键清理。</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div>
+        <h3>Geo 数据与高级设置</h3>
+        <p>GeoIP / GeoSite 数据自动更新，可调整混合端口、IPv6、TCP 并发、Hosts、低内存加载器等。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 系统要求 ============ -->
+<section id="specs">
+  <div class="wrap">
+    <h2>系统要求与应用信息</h2>
+    <p class="section-lead">提交 App Store 审核与用户咨询时可参考以下信息。</p>
+    <table class="spec">
+      <tr><th>应用名称</th><td>FlClash</td></tr>
+      <tr><th>当前版本</th><td>1.0.0</td></tr>
+      <tr><th>系统要求</th><td>iOS 15.0 或更高版本</td></tr>
+      <tr><th>支持设备</th><td>iPhone、iPad</td></tr>
+      <tr><th>界面语言</th><td>简体中文、English（可在「工具 → 语言」中切换）</td></tr>
+      <tr><th>核心组件</th><td>mihomo 内核（开源项目，Meta 分支）</td></tr>
+      <tr><th>网络能力</th><td>Network Extension（Packet Tunnel），仅在用户手动开启时生效</td></tr>
+      <tr><th>数据收集</th><td>无。应用不收集、不上传、不分析任何个人或使用数据</td></tr>
+      <tr><th>费用</th><td>应用本身不含订阅或内购；不提供、不出售任何网络服务</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>关于配置来源：</strong>FlClash 是一款配置管理工具，本身不提供任何网络节点或代理服务。所有配置文件均由用户自行添加，且仅在设备本地加载与解析。请确保您的使用方式符合所在地区的法律法规及网络服务提供方的条款。
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="band">
+  <div class="wrap">
+    <h2>常见问题</h2>
+    <p class="section-lead">大部分使用问题都可以在这里找到答案。</p>
+
+    <div class="faq">
+      <details>
+        <summary>如何导入我的配置文件？</summary>
+        <div class="faq-body">
+          <p>进入「配置」页，点击右上角 <strong>+</strong>，可选择三种方式：</p>
+          <ol>
+            <li><strong>从 URL 下载订阅</strong> — 粘贴订阅链接后点击下载。</li>
+            <li><strong>从文件导入</strong> — 选择设备上已保存的 <code>.yaml</code> / <code>.yml</code> 文件。</li>
+            <li><strong>扫描二维码</strong> — 使用相机扫描配置二维码。</li>
+          </ol>
+          <p>导入后点击配置项即可启用，配置会热应用，无需重启应用。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>开启 VPN 时提示「需要允许 VPN 配置」怎么办？</summary>
+        <div class="faq-body">
+          <p>首次开启时，iOS 会弹出系统授权对话框，需要点击<strong>「允许」</strong>并通过 Face ID / Touch ID / 密码验证。这是 iOS 的标准流程，用于将 VPN 配置写入系统设置。</p>
+          <p>若误点了「不允许」，请在 <strong>iOS 设置 → 通用 → VPN 与设备管理</strong> 中删除残留配置后，回到应用重新开启。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>VPN 已开启，但网络无法访问</summary>
+        <div class="faq-body">
+          <p>请按顺序排查：</p>
+          <ol>
+            <li>在「仪表盘」确认状态显示为<strong>「正在接管流量」</strong>。</li>
+            <li>在「代理」页对当前策略组测速，确认所选节点<strong>延迟正常</strong>（非 Timeout）。</li>
+            <li>确认配置文件<strong>未过期</strong>，可在「配置」页下拉刷新订阅。</li>
+            <li>切换出站模式（规则 / 全局）验证是否为分流规则问题。</li>
+            <li>在「工具 → 日志」将级别调至 <code>info</code> 或 <code>debug</code>，查看具体报错。</li>
+            <li>仍无效时，关闭 VPN 后在「工具 → VPN 诊断」中运行一次检测。</li>
+          </ol>
+        </div>
+      </details>
+
+      <details>
+        <summary>使用一段时间后 VPN 自动断开</summary>
+        <div class="faq-body">
+          <p>iOS 对网络扩展进程有约 <strong>50MB</strong> 的内存硬上限，超出会被系统终止。应用已内置多层内存控制，但在超高并发场景下仍可能触发。建议：</p>
+          <ul>
+            <li>在「工具 → 基本配置」中开启<strong>低内存 Geo 加载器</strong>（memconservative）。</li>
+            <li>将<strong>日志级别</strong>设为 <code>warning</code> 或 <code>silent</code>。</li>
+            <li>关闭 <strong>TCP 并发</strong>与不必要的 <strong>IPv6</strong>。</li>
+            <li>精简配置中的规则集，优先使用 GeoIP 而非大体积 GEOSITE 规则集。</li>
+          </ul>
+          <p>可在「仪表盘」实时查看扩展进程的内存占用。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>如何切换应用语言？</summary>
+        <div class="faq-body">
+          <p>进入「工具 → 语言」，可选择<strong>跟随系统</strong>、<strong>中文</strong>或 <strong>English</strong>。部分底部标签栏文字需要重启应用后完全生效。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Geo 数据（GeoIP / GeoSite）如何更新？</summary>
+        <div class="faq-body">
+          <p>进入「工具 → 资源」，可查看各数据文件的下载状态与更新时间，点击即可手动更新。开启<strong>自动更新</strong>后，应用会按设定的间隔（小时）在后台刷新。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>应用会收集我的数据吗？</summary>
+        <div class="faq-body">
+          <p><strong>不会。</strong>FlClash 不收集、不上传、不分析任何个人信息或使用数据，也不含第三方统计与广告 SDK。您添加的订阅配置、连接日志与流量统计<strong>仅存储在设备本地</strong>，可随时在应用内清除。</p>
+          <p>详情请查看<a href="privacy-zh.html">隐私政策</a>。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>如何彻底卸载并清除数据？</summary>
+        <div class="faq-body">
+          <ol>
+            <li>在应用内关闭 VPN 开关。</li>
+            <li>长按主屏幕图标 → 删除 App。</li>
+            <li>前往 <strong>iOS 设置 → 通用 → VPN 与设备管理</strong>，删除名为 FlClash 的 VPN 配置。</li>
+          </ol>
+          <p>删除应用后，所有本地配置与日志将随沙盒一并移除。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>提交问题反馈时应提供哪些信息？</summary>
+        <div class="faq-body">
+          <p>为便于快速定位，请在邮件中附上：</p>
+          <ul>
+            <li>设备型号与 iOS 版本（如 iPhone 14、iOS 17.5）</li>
+            <li>应用版本号（可在「工具 → 关于」中查看）</li>
+            <li>问题的具体表现与复现步骤</li>
+            <li>「工具 → 日志」中的相关日志片段（<strong>请自行隐去订阅链接、服务器地址等敏感信息</strong>）</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 FlClash for iOS. 保留所有权利。</p>
+    <p class="spacer">
+      <a href="privacy-zh.html">隐私政策</a> ·
+      <a href="index.html">English</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

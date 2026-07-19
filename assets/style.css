@@ -1,0 +1,211 @@
+/* FlClash for iOS — Support Site
+   Apple-flavoured system design: SF stack, hairline separators, blurred nav. */
+
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f5f5f7;
+  --card: #ffffff;
+  --text: #1d1d1f;
+  --text-2: #6e6e73;
+  --text-3: #86868b;
+  --line: rgba(0, 0, 0, 0.10);
+  --accent: #0071e3;
+  --accent-soft: rgba(0, 113, 227, 0.10);
+  --brand-a: #4CB2FF;
+  --brand-b: #1A55D2;
+  --nav-bg: rgba(255, 255, 255, 0.72);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --radius: 18px;
+  --maxw: 980px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --bg-alt: #101012;
+    --card: #1c1c1e;
+    --text: #f5f5f7;
+    --text-2: #a1a1a6;
+    --text-3: #86868b;
+    --line: rgba(255, 255, 255, 0.14);
+    --accent: #2997ff;
+    --accent-soft: rgba(41, 151, 255, 0.14);
+    --nav-bg: rgba(22, 22, 23, 0.72);
+    --shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--nav-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: var(--maxw); margin: 0 auto; padding: 0 22px;
+  height: 52px; display: flex; align-items: center; gap: 26px;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 9px;
+  font-size: 16px; font-weight: 600; color: var(--text); letter-spacing: -0.015em;
+}
+.nav-brand:hover { text-decoration: none; }
+.nav-brand img { width: 22px; height: 22px; border-radius: 6px; }
+.nav-links { display: flex; gap: 24px; margin-left: auto; align-items: center; }
+.nav-links a { font-size: 13px; color: var(--text-2); }
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+.lang-pill {
+  font-size: 12px; font-weight: 500;
+  border: 1px solid var(--line); border-radius: 980px;
+  padding: 3px 11px; color: var(--text-2) !important;
+}
+@media (max-width: 700px) {
+  .nav-links a:not(.lang-pill) { display: none; }
+}
+
+/* ---------- Hero ---------- */
+/* Keep .wrap's 22px side padding — a `padding: x 0 y` shorthand would drop it. */
+.hero { text-align: center; padding: 84px 22px 68px; }
+.hero-icon {
+  width: 116px; height: 116px; border-radius: 26px;
+  box-shadow: 0 12px 40px rgba(26, 85, 210, 0.28);
+  margin-bottom: 26px;
+}
+.hero h1 {
+  font-size: 52px; line-height: 1.08; font-weight: 600;
+  letter-spacing: -0.025em; margin: 0 0 14px;
+}
+.hero .sub {
+  font-size: 21px; color: var(--text-2); max-width: 640px;
+  margin: 0 auto 12px; line-height: 1.45; letter-spacing: -0.012em;
+}
+.hero .meta { font-size: 14px; color: var(--text-3); margin-top: 20px; }
+.hero .meta span { margin: 0 9px; }
+@media (max-width: 700px) {
+  .hero { padding: 56px 22px 44px; }
+  .hero h1 { font-size: 34px; }
+  .hero .sub { font-size: 18px; }
+}
+
+/* ---------- Sections ---------- */
+section { padding: 62px 0; border-top: 1px solid var(--line); }
+section.plain { border-top: none; }
+.band { background: var(--bg-alt); }
+
+h2 {
+  font-size: 32px; font-weight: 600; letter-spacing: -0.02em;
+  margin: 0 0 10px;
+}
+.section-lead { color: var(--text-2); margin: 0 0 34px; font-size: 17px; max-width: 640px; }
+h3 { font-size: 19px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 8px; }
+@media (max-width: 700px) { h2 { font-size: 26px; } }
+
+/* ---------- Feature grid ---------- */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 22px 20px; box-shadow: var(--shadow);
+}
+.card p { margin: 0; color: var(--text-2); font-size: 15px; line-height: 1.5; }
+.card .ico {
+  width: 34px; height: 34px; border-radius: 9px; margin-bottom: 13px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent);
+}
+.card .ico svg { width: 19px; height: 19px; stroke: currentColor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- Spec table ---------- */
+.spec { width: 100%; border-collapse: collapse; font-size: 16px; }
+.spec tr { border-bottom: 1px solid var(--line); }
+.spec tr:last-child { border-bottom: none; }
+.spec th {
+  text-align: left; font-weight: 400; color: var(--text-2);
+  padding: 15px 16px 15px 0; width: 210px; vertical-align: top;
+}
+.spec td { padding: 15px 0; vertical-align: top; }
+@media (max-width: 560px) {
+  .spec th, .spec td { display: block; width: auto; padding: 0; }
+  .spec th { padding-top: 15px; font-size: 14px; }
+  .spec td { padding-bottom: 15px; }
+}
+
+/* ---------- FAQ ---------- */
+.faq { border-top: 1px solid var(--line); }
+details {
+  border-bottom: 1px solid var(--line);
+}
+details summary {
+  cursor: pointer; list-style: none; padding: 19px 34px 19px 0;
+  font-size: 17px; font-weight: 500; position: relative; letter-spacing: -0.012em;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::after {
+  content: ""; position: absolute; right: 6px; top: 50%;
+  width: 9px; height: 9px; margin-top: -6px;
+  border-right: 1.8px solid var(--text-3); border-bottom: 1.8px solid var(--text-3);
+  transform: rotate(45deg); transition: transform 0.2s ease;
+}
+details[open] summary::after { transform: rotate(-135deg); margin-top: -2px; }
+details summary:hover { color: var(--accent); }
+.faq-body { padding: 0 0 22px; color: var(--text-2); font-size: 16px; }
+.faq-body p { margin: 0 0 10px; }
+.faq-body ol, .faq-body ul { margin: 0 0 10px; padding-left: 22px; }
+.faq-body li { margin-bottom: 6px; }
+.faq-body strong { color: var(--text); font-weight: 600; }
+
+/* ---------- Callout ---------- */
+.callout {
+  border-left: 3px solid var(--accent); background: var(--accent-soft);
+  border-radius: 0 12px 12px 0; padding: 15px 18px; margin: 22px 0;
+  font-size: 15px; color: var(--text-2);
+}
+.callout strong { color: var(--text); }
+
+/* ---------- Prose (privacy) ---------- */
+.prose { max-width: 720px; }
+.prose h2 { font-size: 24px; margin-top: 42px; }
+.prose h2:first-of-type { margin-top: 0; }
+.prose p, .prose li { color: var(--text-2); font-size: 16px; }
+.prose li { margin-bottom: 8px; }
+.prose strong { color: var(--text); font-weight: 600; }
+/* Match .prose's column width so the title aligns with the body text below it. */
+.page-head { padding: 62px 22px 34px; max-width: 720px; }
+.page-head h1 { font-size: 40px; font-weight: 600; letter-spacing: -0.022em; margin: 0 0 8px; }
+.page-head .updated { color: var(--text-3); font-size: 14px; }
+@media (max-width: 700px) { .page-head h1 { font-size: 30px; } }
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--line); background: var(--bg-alt);
+  padding: 34px 0; font-size: 13px; color: var(--text-3);
+}
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; }
+footer a { color: var(--text-2); }
+footer .spacer { margin-left: auto; }
+footer p { margin: 0; }
